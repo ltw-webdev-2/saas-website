@@ -35,7 +35,7 @@ html:
       - 'main[role="main"]'
       - 'section'
       - 'footer'
-      - 'img.img-flex'
+      - '.img-flex'
       - 'h2'
       - 'div'
       - '.grid'
