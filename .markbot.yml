@@ -1,5 +1,5 @@
-repo: 'confectionery-website'
-canvasCourse: 'web-dev-3'
+repo: 'saas-website'
+canvasCourse: 'web-dev-2'
 
 naming: true
 liveWebsite: true
@@ -10,55 +10,67 @@ git:
   allSynced: true
 
 allFiles:
-  files:
-    maxWidth: 2500
-    maxHeight: 2500
-    maxSize: 300
-    smushed: true
-
-html:
-  - path: 'index.html'
+  html:
     valid: true
     bestPractices: true
     outline: true
+    unique:
+      - 'h1'
+      - 'title'
     has:
       - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
       - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
       - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
       - ['link[href*="fonts.googleapis.com"]', 'A webfont from Google Fonts should be used']
-      - '.skip-links'
-      - 'header[role="banner"]'
-      - 'header h1'
       - 'header nav'
       - 'header nav li'
       - 'header nav li a'
-      - 'main[role="main"]'
-      - 'section'
+      - '[class*="list-group"]'
+      - 'main'
       - 'footer'
-      - '.img-flex'
       - 'h2'
       - 'div'
+      - 'img'
       - '.grid'
       - '.unit'
-      - '.embed'
-      - '.embed-item'
-      - '[class*="list-group"]'
-      - '[class*="gutter-"]'
-      - '[class*="push-"]'
+      - '.grid > .unit'
+      - '[class*="gutter"]'
+      - '[class*="push"]'
       - '[class*="pad-"]'
       - '[class*="xs-"]'
       - '[class*="s-"]'
       - '[class*="m-"]'
       - '[class*="l-"]'
+    search:
+      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
+
+html:
+  - path: 'index.html'
+    has:
+      - 'section'
+      - '.embed'
+      - '.embed-item'
+  - path: 'tour.html'
+    has:
+      - 'table'
+      - 'table > caption'
+      - 'thead'
+      - 'tbody'
+      - 'th[scope]'
+      - 'tr'
+      - 'td'
+  - path: 'pricing.html'
+  - path: 'sign-up.html'
+    has:
       - ['form[method="POST"][action*="formspree.io"]', 'The `<form>` should submit to @@https://formspree.io/@@']
       - 'label[for]'
       - 'input[id][name]'
       - 'button[type="submit"]'
-      - 'footer[role="contentinfo"]'
-    search:
-      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
 
 css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
   - path: 'css/modules.css'
     valid: true
     bestPractices: true
@@ -74,12 +86,6 @@ css:
     bestPractices: true
     search:
       - ['https://typografier.web-dev.tools/', 'Typograpfier wasn’t used to generate this file.']
-  - path: 'css/main.css'
-    valid: true
-    bestPractices: true
-    search:
-      - 'background'
-      - 'url\("'
 
 functionality:
   - path: 'index.html'
@@ -93,9 +99,3 @@ functionality:
           if (css(headerLink).backgroundColor == oldBg && css(headerLink).color == oldColor) fail('The `background-color` or `color` of the navigation links don’t change when hovered')
           pass();
         });
-
-performance:
-  - path: 'index.html'
-
-files:
-  - directory: 'images'
