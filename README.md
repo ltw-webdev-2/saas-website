@@ -1,15 +1,15 @@
 ---
-summary: 'Code the SAAS website you designed in your Interaction Design course.'
+summary: 'Code the SaaS website you designed in your Interaction Design course.'
 time: '10 hours'
 deliverables: '4 HTML files, 4 CSS files, images'
 ---
 
-# SAAS website
+# SaaS website
 
 ## Overview
 
 - *Fork this repository.*
-- Code the whole SAAS website you designed in your Interaction Design course.
+- Code the whole SaaS website you designed in your Interaction Design course.
 - Create a multi-page website: Home, Tour, Pricing & Sign-up.
 - *It should have real text content*—**that you have written yourself.**
 - It should be completely designed, with real images, real colours—and it should look amazing.
