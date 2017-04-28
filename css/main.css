@@ -15,21 +15,20 @@ html {
   font-family: sans-serif;
   margin: 0;
   min-width: 320px;
+  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-
 .pricing-free {
-  background-color: #F4572B;
+  background-color: #f4572b;
 }
 
 .pricing-pro {
-  background-color: #02DB5B;
+  background-color: #02db5b;
 }
-
 
 .logo {
   width: 25%;
@@ -42,17 +41,25 @@ html {
 }
 
 .btn-blue {
-    border: 1px solid #7BCBFF;
-    background-color: #7BCBFF;
+  border: 1px solid #7bcbff;
+  background-color: #7bcbff;
+}
+
+.btn-blue:hover {
+  background-color: #43b5ff;
 }
 
 .btn-green {
-    border: 1px solid #00BE4D;
-    background-color: #00BE4D;
+  border: 1px solid #00be4d;
+  background-color: #00be4d;
 }
 
 .main-banner {
-    height: 35em;
+  height: 35em;
+}
+
+.trial-box {
+  background-color: #262626;
 }
 
 header {
@@ -130,7 +137,7 @@ a:hover {
 }
 
 .current {
-  background-color: #02DB5B;
+  background-color: #02db5b;
 }
 
 @media only screen and (min-width: 25em) {
