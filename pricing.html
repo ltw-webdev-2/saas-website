@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SASS 360 VR</title>
+  <title>360 VR</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
 </head>
 <body>
-  <header>
-
-    <h1>360 VR</h1>
-    <nav class="topbar zindex-1000 w-1 text-right">
-      <img class="topbarlogo img-flex" src="images/nav-icon-close.svg" alt="logo">
+  <header class="grid grid-middle">
+    <div class="unit xs-1 s-1 m-1-3">
+    <h1 class="topbarlogo zindex-2 text-left"><a class="logo-link" href="index.html">360 VR</a></h1>
+  </div>
+    <nav class="unit xs-1 s-1 m-2-3 topbar text-right">
       <ul class="list-group">
         <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -27,49 +27,58 @@
 
   </header>
 <main>
-    <div class="relative block white">
-      <img class="mainpic" src="https://placehold.it/3000x2000" alt="mainpic">
+    <div class="relative block white push-2">
+      <img class="mainpic" src="https://placehold.it/3000x1000" alt="mainpic">
       <div class="absolute pin-lt island-1-2 max-length">
         <h2>TRY PREMIUM FREE FOR 30 DAYS</h2>
         <p>Get a real feel for what premium offers and enjoy it cost free on us for the first 30 days.</p>
       </div>
     </div>
 
-<div class="grid">
+<div class="grid max-length">
 
-  <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 relative">
-      <img class="img-flex" src="images/placeholder-2by3.svg" alt="Company">
-      <div class="absolute pin-ct island-1-2 white">
-        <h4>Filters</h4>
+<div class="unit xs-1 l-1-2 center-content push-2 island-1-2">
+        <div class="pricing-free island">
+          <h3 class="text-upper yotta text-center price">FREE</h3>
+          <h3 class="text-upper yotta text-center price">0.00$</h3>
+            <ul class="list-group gutter micro text-center">
+              <li class="push-1-2 block">All  Free Features</li>
+              <li class="push-1-2 block">All  Free Features</li>
+              <li class="push-1-2 block">All  Free Features</li>
+            </ul>
+            <div class="island center-content">
+              <a class="btn text-upper" href="sign-up.html">Sign Up</a>
+            </div>
+        </div>
       </div>
+
+      <div class="unit xs-1 l-1-2 center-content push-2 island-1-2">
+        <div class="pricing-pro island">
+                <h3 class="text-upper yotta text-center price">Premium</h3>
+                <h3 class="text-upper yotta text-center price">6.00$</h3>
+                  <ul class="list-group gutter micro text-center">
+                    <li class="push-1-2 block">All  Free Features</li>
+                    <li class="push-1-2 block">All  Free Features</li>
+                    <li class="push-1-2 block">All  Free Features</li>
+                  </ul>
+                  <div class="island center-content">
+                    <a class="btn text-upper" href="sign-up.html">Sign Up</a>
+                  </div>
+              </div>
+            </div>
+
   </div>
 
-
-  <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 relative">
-      <img class="img-flex" src="images/placeholder-2by3.svg" alt="Company">
-      <div class="absolute pin-ct island-1-2 white">
-        <h4>Custom</h4>
-      </div>
-  </div>
-
-
-  <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 relative">
-      <img class="img-flex" src="images/placeholder-2by3.svg" alt="Company">
-      <div class="absolute pin-ct island-1-2 white">
-        <h4>Geo locations</h4>
-      </div>
-  </div>
-</div>
 
 
 
   </main>
   <footer>
     <nav class="bottombar">
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Google</a></li>
+      <ul class="list-group">
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://plus.google.com">Google</a></li>
       </ul>
     </nav>
   </footer>

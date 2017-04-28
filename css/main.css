@@ -21,23 +21,15 @@ html {
   box-sizing: inherit;
 }
 
-.topbar {
-  background-color: #ff6347;
-  position: fixed;
-  top: 0;
-  height: 82px;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
+
+.pricing-free {
+  background-color: #F4572B;
 }
 
-.topbarlogo {
-  height: 80px;
-  width: 10%;
-  display: inline;
-  float: left;
+.pricing-pro {
+  background-color: #02DB5B;
 }
+
 
 .logo {
   width: 25%;
@@ -49,8 +41,19 @@ html {
   height: 30%;
 }
 
+.btn-blue {
+    border: 1px solid #7BCBFF;
+    background-color: #7BCBFF;
+}
+
+.btn-green {
+    border: 1px solid #00BE4D;
+    background-color: #00BE4D;
+}
+
 header {
-  height: 82px;
+  background-color: #262626;
+  height: 120px;
 }
 
 h1 {
@@ -79,6 +82,7 @@ body {
 ul {
   padding: 1em;
   margin: 0;
+  text-align: center;
 }
 
 li {
@@ -97,17 +101,32 @@ a {
   margin-bottom: .3em;
 }
 
+.logo-link {
+  display: inline-block;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
 .white {
   color: #fff;
 }
 
 a:hover {
   text-decoration: none;
-  background-color: #d2691e;
+  background-color: #efefef;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .current {
-  background-color: #b20953;
+  background-color: #02DB5B;
 }
 
 @media only screen and (min-width: 25em) {
@@ -125,6 +144,11 @@ a:hover {
     font-size: 110%;
     line-height: 1.4;
   }
+
+  ul {
+    text-align: right;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {

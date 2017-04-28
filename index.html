@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SASS 360 VR</title>
+  <title>360 VR</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -14,16 +14,18 @@
 <body>
   <header>
 
-    <h1>360 VR</h1>
-    <nav class="topbar zindex-1000 w-1 text-right">
-      <img class="topbarlogo img-flex" src="images/nav-icon-close.svg" alt="logo">
-      <ul class="list-group">
-        <li><a class="current" href="index.html">Home</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="sign-up.html">Sign Up</a></li>
-      </ul>
-    </nav>
+    <header class="grid grid-middle">
+      <div class="unit xs-1 s-1 m-1-3">
+      <h1 class="topbarlogo zindex-2 text-left"><a class="logo-link" href="index.html">360 VR</a></h1>
+    </div>
+      <nav class="unit xs-1 s-1 m-2-3 topbar  text-right">
+        <ul class="list-group">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="sign-up.html">Sign Up</a></li>
+        </ul>
+      </nav>
 
   </header>
 <main>
@@ -103,10 +105,10 @@
   </main>
   <footer>
     <nav class="bottombar">
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Google</a></li>
+      <ul class="list-group">
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+        <li><a href="https://plus.google.com">Google</a></li>
       </ul>
     </nav>
   </footer>
