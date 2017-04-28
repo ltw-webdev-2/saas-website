@@ -51,6 +51,10 @@ html {
     background-color: #00BE4D;
 }
 
+.main-banner {
+    height: 35em;
+}
+
 header {
   background-color: #262626;
   height: 120px;
