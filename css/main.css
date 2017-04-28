@@ -22,6 +22,10 @@ html {
   box-sizing: inherit;
 }
 
+.box {
+  max-width: 100px;
+}
+
 .pricing-free {
   background-color: #f4572b;
 }
@@ -71,7 +75,6 @@ h1 {
   font-size: 3rem;
   margin: 0;
   list-style-type: none;
-  text-align: center;
 }
 
 h2 {
