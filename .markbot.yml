@@ -1,55 +1,36 @@
 repo: 'saas-website'
 canvasCourse: 'web-dev-2'
 
-naming: true
-liveWebsite: true
-
-git:
-  numCommits: 10
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-10
+  - html
+  - css
+  - css-order-modules-grid-type-main
+  - modulifier
+  - gridifier-unrestricted
+  - typografier-unrestricted
+  - modulifier-list-group
+  - modulifier-buttons
+  - modulifier-embed
+  - google-fonts
+  - html-good-semantics
+  - forms
+  - nav-hover
+  - nav-focus
+  - accessibility
+  - aria-landmarks
+  - main-link-focus
 
 allFiles:
   html:
-    valid: true
-    bestPractices: true
-    outline: true
-    unique:
-      - 'h1'
-      - 'title'
     has:
-      - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
-      - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
-      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
-      - ['link[href*="fonts.googleapis.com"]', 'A webfont from Google Fonts should be used']
-      - 'header nav'
-      - 'header nav li'
-      - 'header nav li a'
-      - '[class*="list-group"]'
-      - 'main'
-      - 'footer'
       - 'h2'
       - 'div'
       - 'img'
-      - '.grid'
-      - '.unit'
-      - '.grid > .unit'
-      - '[class*="gutter"]'
-      - '[class*="push"]'
-      - '[class*="pad-"]'
-      - '[class*="xs-"]'
-      - '[class*="s-"]'
-      - '[class*="m-"]'
-      - '[class*="l-"]'
-    search:
-      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
 
 html:
   - path: 'index.html'
-    has:
-      - 'section'
-      - '.embed'
-      - '.embed-item'
   - path: 'tour.html'
     has:
       - 'table'
@@ -69,33 +50,3 @@ html:
 
 css:
   - path: 'css/main.css'
-    valid: true
-    bestPractices: true
-  - path: 'css/modules.css'
-    valid: true
-    bestPractices: true
-    search:
-      - ['https://modulifier.web-dev.tools/', 'Modulifier wasn’t used to generate this file.']
-  - path: 'css/grid.css'
-    valid: true
-    bestPractices: true
-    search:
-      - ['https://gridifier.web-dev.tools/', 'Gridifier wasn’t used to generate this file.']
-  - path: 'css/type.css'
-    valid: true
-    bestPractices: true
-    search:
-      - ['https://typografier.web-dev.tools/', 'Typograpfier wasn’t used to generate this file.']
-
-functionality:
-  - path: 'index.html'
-    tests:
-      - |
-        let headerLink = $('header nav a');
-        let oldBg = css(headerLink).backgroundColor;
-        let oldColor = css(headerLink).color;
-
-        hover('header nav a', function () {
-          if (css(headerLink).backgroundColor == oldBg && css(headerLink).color == oldColor) fail('The `background-color` or `color` of the navigation links don’t change when hovered')
-          pass();
-        });

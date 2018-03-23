@@ -31,19 +31,18 @@ There should be a significant example of everything we’ve learned this term in
 ### All HTML files
 
 - `header`, `header nav`, `header nav li`, `header nav a`
-- `main`, `h2`, `div`, `img`, `footer`
+- `main`, `h2`, `div`, `img`, `footer`, `section` or `article`
 - `modules.css`, `grid.css`, `type.css`, `main.css`
-  And many of the expected classes: `.grid`, `.unit`, `.xs-`, `.s-`, `.m-`, `.l-`, `.pad-`, `.push`, `.gutter`, `.list-group`, *font size classes*
+  And many of the expected classes: `.grid`, `.unit`, `.xs-`, `.s-`, `.m-`, `.l-`, `.pad-`, `.push`, `.gutter`, `.list-group`, `.embed`, *font size classes*
 - A Google Font
 - A `color` or `background-color` hover state on the navigation
 - A unique `<title>` & `<h1>` for everything HTML page
+- Focus states on the navigation and links in the main body content
+- ARIA roles & proper accessibility & colour contrast
 
 ### Only `index.html`
 
-*Everything from “All HTML files” plus:*
-
-- `section`
-- `.embed`, `.embed-item`
+*Doesn’t have any specific requirements, but still must fulfill the general requirements.*
 
 ### Only `tour.html`
 
@@ -87,6 +86,7 @@ Below is the rubric of expectations for this project. **You will be assigned a l
 | **Semantics** | Very little HTML | Basic HTML tags chosen | Good variety and appropriate HTML tags chosen | Excellent demonstration of HTML tags and correct use |
 | **Design** | Very little design | Basic design implemented | Cohesive design implementation | Excellent design implementation |
 | **Modularity** | Modular CSS not used | Some basic modular CSS used | Lots of modular CSS | Modular CSS used to its full potential |
+| **Accessibility** | Not accessibile | Some accessibility but doesn’t work well with certain situations | Some minor accessibility problems | Works really well under all the standard accessibility tests |
 | **Forms** | No form | Non-functioning form | Functional but ugly form | Good looking and functional form |
 | **Tables** | No table | Poorly designed & incomplete table | Functional but ugly table | Good looking & functional table |
 | **Home page** | Missing or incomplete | Started but severely lacking | Complete but with poor text or bad responsiveness—not quite perfect | Complete, amazing content, responsive, designed well—amazing |
