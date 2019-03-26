@@ -22,7 +22,7 @@ deliverables: '4 HTML files, 4 CSS files, images'
 
 This website is to prove that you—by yourself—can do everything we covered in class. Look back over all the assignments from the term, determine what kernel of knowledge they were trying to teach you, and see if you can implement it in this website.
 
-There should be a significant example of everything we’ve learned this term in this website. **Leave the impression that you’ve confident with what we’ve learned and can apply everything.**
+There should be a significant example of everything we’ve learned this term in this website. **Leave the impression that you’re confident with what we’ve learned and can apply everything.**
 
 ---
 
@@ -69,7 +69,7 @@ CSS requirements are really open—just make sure the CSS is valid & indented pr
 
 ## Browser testing
 
-In class, week 14, we will be doing lots of peer testing—most of the website needs to be complete by then.
+In class, week 15, we will be doing lots of peer testing—most of the website needs to be complete by then.
 
 Each person will be assigned a browser or validator and will be required to test everybody’s websites.
 
